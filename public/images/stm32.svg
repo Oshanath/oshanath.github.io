@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#202027"/>
+<g stroke="#777b99" stroke-width="3" opacity=".55">
+<path d="M395 140V180M425 140V180M455 140V180M485 140V180M515 140V180M545 140V180M575 140V180M605 140V180M395 380V420M425 380V420M455 380V420M485 380V420M515 380V420M545 380V420M575 380V420M605 380V420M360 205H320M360 235H320M360 265H320M360 295H320M360 325H320M360 355H320M640 205H680M640 235H680M640 265H680M640 295H680M640 325H680M640 355H680"/>
+</g><rect x="360" y="180" width="280" height="200" rx="12" fill="#25252f" stroke="#868aa7"/>
+<circle cx="382" cy="202" r="5" fill="#868aa7"/>
+<text x="500" y="277" text-anchor="middle" fill="#c7c8da" font-family="monospace" font-size="32" letter-spacing="5">STM32</text>
+<text x="500" y="310" text-anchor="middle" fill="#9497ae" font-family="monospace" font-size="15" letter-spacing="2">F1 SERIES</text>
+<text x="48" y="50" fill="#979aaf" font-family="monospace" font-size="15" letter-spacing="3">02 / EMBEDDED SYSTEMS</text>
+<text x="48" y="522" fill="#979aaf" font-family="monospace" font-size="14">CLOSE TO THE HARDWARE</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#16211f"/>
+<g fill="none" stroke="#92c5af" stroke-width="2" opacity=".42">
+<path d="M180 135H370L630 425H820M180 425H370L630 135H820M180 232H370L630 328H820M180 328H370L630 232H820"/>
+<path d="M180 135H370L630 232H820M180 232H370L630 135H820M180 328H370L630 425H820M180 425H370L630 328H820"/>
+</g><g fill="#a8ceb9">
+<circle cx="180" cy="135" r="5"/><circle cx="180" cy="232" r="5"/><circle cx="180" cy="328" r="5"/><circle cx="180" cy="425" r="5"/>
+<circle cx="370" cy="135" r="5"/><circle cx="370" cy="232" r="5"/><circle cx="370" cy="328" r="5"/><circle cx="370" cy="425" r="5"/>
+<circle cx="630" cy="135" r="5"/><circle cx="630" cy="232" r="5"/><circle cx="630" cy="328" r="5"/><circle cx="630" cy="425" r="5"/>
+<circle cx="820" cy="135" r="5"/><circle cx="820" cy="232" r="5"/><circle cx="820" cy="328" r="5"/><circle cx="820" cy="425" r="5"/>
+</g><text x="48" y="50" fill="#90aa9e" font-family="monospace" font-size="15" letter-spacing="3">01 / HARDWARE NTT</text>
+<text x="48" y="522" fill="#90aa9e" font-family="monospace" font-size="14">COEFFICIENTS → EVALUATIONS</text>
+</svg>

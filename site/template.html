@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#141716">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  {{CANONICAL}}
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./interactions.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <div class="identity">
+        <a class="monogram" href="#top" aria-label="Back to top">{{INITIALS}}<span>.</span></a>
+        {{AVATAR}}
+        <p class="identity-name">{{NAME}}</p>
+        <p class="identity-role">{{ROLE}}</p>
+        <p class="location"><svg width="13" height="15" viewBox="0 0 16 18" fill="none" aria-hidden="true"><path d="M13.5 7.5C13.5 12 8 16.5 8 16.5S2.5 12 2.5 7.5a5.5 5.5 0 1 1 11 0Z" stroke="currentColor"/><circle cx="8" cy="7.5" r="1.8" stroke="currentColor"/></svg>{{LOCATION}}</p>
+      </div>
+      <nav class="section-nav" aria-label="Portfolio sections">{{NAVIGATION}}</nav>
+      <div class="sidebar-bottom"><div class="social-links">{{SOCIAL_LINKS}}</div><p>A small corner of the internet.</p></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <header class="hero" id="top">
+        <div class="hero-topline"><span>Personal portfolio</span><span class="edition">{{YEAR}} Edition</span></div>
+        <p class="eyebrow"><span class="accent-dot" aria-hidden="true"></span>{{EYEBROW}}</p>
+        <h1>{{HEADLINE}}</h1>
+        <div class="hero-intro prose">{{INTRO}}</div>
+        <div class="hero-links">{{PRIMARY}}{{SOCIAL_LINKS}}</div>
+      </header>
+      {{SECTIONS}}
+      <footer class="footer"><span>© {{YEAR}} {{NAME}}</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+    </main>
+  </div>
+</body>
+</html>
