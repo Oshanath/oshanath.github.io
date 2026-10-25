@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────
+#  Your details. Edit these, then commit & push.
+# ─────────────────────────────────────────────
+name: Oshanath Rajawasam
+tagline: Software engineer exploring secure computing, databases, and hardware acceleration.
+
+# Links shown under your name. Add, remove or reorder freely.
+links:
+  - label: GitHub
+    url: https://github.com/Oshanath
+  # - label: LinkedIn
+  #   url: https://www.linkedin.com/in/your-handle
+  # - label: Email
+  #   url: mailto:you@example.com
+
+# Accent colour used for links and highlights.
+accent: "#ff5c39"
+
+# ─────────────────────────────────────────────
+#  Site plumbing. You shouldn't need to touch this.
+# ─────────────────────────────────────────────
+title: Oshanath Rajawasam
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+collections:
+  sections:
+    output: false
+
+exclude:
+  - README.md
