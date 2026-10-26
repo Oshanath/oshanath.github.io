@@ -1,6 +1,7 @@
 ---
 title: About
 order: 1
+summary: Who I am and what I'm curious about.
 ---
 
 I'm Oshanath, a software engineer drawn to the space between

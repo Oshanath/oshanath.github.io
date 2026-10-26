@@ -1,36 +1,22 @@
 ---
 layout: default
 ---
-{% assign sections = site.sections | where_exp: "s", "s.hidden != true" | sort: "order" %}
+{% assign sections = site.sections | sort: "order" %}
 
 <header class="hero">
-  <h1>{{ site.name }}</h1>
+  <h1>{{ site.name }}<span>.</span></h1>
   <p class="tagline">{{ site.tagline }}</p>
-  <ul class="links">
-    {% for link in site.links %}
-    <li><a href="{{ link.url }}"{% unless link.url contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}>{{ link.label }}</a></li>
-    {% endfor %}
-  </ul>
 </header>
 
-<nav class="toc" aria-label="Sections">
-  {% for section in sections %}
-  <a href="#{{ section.title | slugify }}"><span>{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>{{ section.title }}</a>
+<ul class="index">
+  {% for s in sections %}
+  <li>
+    <a href="{{ s.url | relative_url }}">
+      <span class="num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+      <span class="t">{{ s.title }}</span>
+      {% if s.summary %}<span class="s">{{ s.summary }}</span>{% endif %}
+      <span class="arrow">→</span>
+    </a>
+  </li>
   {% endfor %}
-</nav>
-
-<main>
-  {% for section in sections %}
-  <section id="{{ section.title | slugify }}">
-    <h2><span class="num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>{{ section.title }}</h2>
-    <div class="content">
-      {{ section.content }}
-    </div>
-  </section>
-  {% endfor %}
-</main>
-
-<footer>
-  <p>© {{ site.time | date: "%Y" }} {{ site.name }}</p>
-  <a href="#top">Back to top ↑</a>
-</footer>
+</ul>

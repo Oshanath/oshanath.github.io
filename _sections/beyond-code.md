@@ -1,6 +1,7 @@
 ---
 title: Beyond code
 order: 4
+summary: Stories, music, and everything else.
 ---
 
 I'm drawn to stories that stay with you long after they end. I write fantasy,

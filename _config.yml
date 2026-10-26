@@ -27,7 +27,14 @@ kramdown:
 
 collections:
   sections:
-    output: false
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      type: sections
+    values:
+      layout: section
 
 exclude:
   - README.md

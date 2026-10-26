@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
+  <title>{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.tagline }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +12,15 @@
   <style>:root { --accent: {{ site.accent | default: '#ff5c39' }}; }</style>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='{{ site.accent | default: '#ff5c39' | replace: '#', '%23' }}'/></svg>">
 </head>
-<body id="top">
-  <div class="wrap">
-    {{ content }}
+<body>
+  <div class="shell">
+    {% include sidebar.html %}
+    <main class="main">
+      {{ content }}
+      <footer>
+        <p>© {{ site.time | date: "%Y" }} {{ site.name }}</p>
+      </footer>
+    </main>
   </div>
 </body>
 </html>

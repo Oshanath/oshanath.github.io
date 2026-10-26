@@ -1,0 +1,28 @@
+{% assign sections = site.sections | sort: "order" %}
+{% assign folder = site.name | split: " " | first | downcase %}
+<aside class="sidebar">
+  <a class="brand" href="{{ '/' | relative_url }}">{{ site.name }}<span>.</span></a>
+
+  <p class="label">Explorer</p>
+  <nav class="tree" aria-label="Sections">
+    <a class="dir{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">
+      <span class="caret">▾</span>{{ folder }}
+    </a>
+    <ul>
+      {% for s in sections %}
+      {% assign file = s.path | split: "/" | last %}
+      <li>
+        <a href="{{ s.url | relative_url }}"{% if page.url == s.url %} class="active" aria-current="page"{% endif %}>
+          <span class="num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>{{ file }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <ul class="links">
+    {% for link in site.links %}
+    <li><a href="{{ link.url }}"{% unless link.url contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}>{{ link.label }} ↗</a></li>
+    {% endfor %}
+  </ul>
+</aside>

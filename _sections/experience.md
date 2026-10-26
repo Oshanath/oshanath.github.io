@@ -1,6 +1,7 @@
 ---
 title: Experience
 order: 3
+summary: Where I've worked and studied.
 ---
 
 ### Software Engineer — WSO2
