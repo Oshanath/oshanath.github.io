@@ -10,10 +10,9 @@
     </a>
     <ul>
       {% for s in sections %}
-      {% assign file = s.path | split: "/" | last %}
       <li>
         <a href="{{ s.url | relative_url }}"{% if page.url == s.url %} class="active" aria-current="page"{% endif %}>
-          <span class="num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>{{ file }}
+          <span class="num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>{{ s.title }}
         </a>
       </li>
       {% endfor %}

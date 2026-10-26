@@ -1,8 +1,9 @@
 ---
-title: Projects
 order: 2
 summary: Things I've built, from hardware to embedded C.
 ---
+
+# Projects
 
 ### [Number Theoretic Transform in hardware](https://github.com/Oshanath/hardware-number-theoretic-transform)
 *Verilog · NTT · Hardware design*

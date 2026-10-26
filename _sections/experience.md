@@ -1,8 +1,9 @@
 ---
-title: Experience
 order: 3
 summary: Where I've worked and studied.
 ---
+
+# Experience
 
 ### Software Engineer — WSO2
 *Aug 2024 – Present*

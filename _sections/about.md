@@ -1,8 +1,9 @@
 ---
-title: About
 order: 1
 summary: Who I am and what I'm curious about.
 ---
+
+# About
 
 I'm Oshanath, a software engineer drawn to the space between
 **well-built software** and **interesting research**. I work on API management

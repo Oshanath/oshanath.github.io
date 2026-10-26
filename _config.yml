@@ -36,5 +36,12 @@ defaults:
     values:
       layout: section
 
+# Each section's title comes from the first "# Heading" in its file.
+plugins:
+  - jekyll-titles-from-headings
+titles_from_headings:
+  collections: true
+  strip_title: true
+
 exclude:
   - README.md

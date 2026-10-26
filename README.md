@@ -14,10 +14,11 @@ Create a new file in `_sections/`, for example `_sections/skills.md`:
 
 ```markdown
 ---
-title: Skills
 order: 3
 summary: Languages and tools I use.
 ---
+
+# Skills
 
 - Python
 - Verilog
@@ -25,11 +26,12 @@ summary: Languages and tools I use.
 
 That's it. It gets its own page at `/skills/` and shows up in the sidebar.
 
-- `title` is the page heading.
+- The first `# Heading` is the section's title. It's used for the page
+  heading and the name in the sidebar. (No heading? The file name is used.)
 - `order` decides where it appears. Lower numbers come first.
   Decimals work too (`order: 2.5`) to slot one in between.
 - `summary` (optional) is the one-liner shown on the home page.
-- The file name becomes the address and the name in the sidebar,
+- The file name becomes the page address (`skills.md` → `/skills/`),
   so keep it short and lowercase, using dashes instead of spaces.
 
 ## Hide or remove a section

@@ -11,7 +11,7 @@ layout: default
 {% endfor %}
 
 <article class="page">
-  <p class="crumb"><a href="{{ '/' | relative_url }}">~</a> / {{ page.path | split: "/" | last }}</p>
+  <p class="crumb"><a href="{{ '/' | relative_url }}">~</a>/{{ page.url | split: "/" | last }}</p>
   <h1><span class="num">{{ idx | prepend: '0' | slice: -2, 2 }}</span>{{ page.title }}</h1>
   <div class="content">
     {{ content }}
